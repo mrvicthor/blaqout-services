@@ -18,7 +18,7 @@ const MobileMenu = ({ handleMenu, showMenu }: MobileMenuProps) => {
             height: 0,
             transition: { delay: 0.7, duration: 0.3 },
           }}
-          className="lg:hidden fixed top-20 left-0 w-full  px-4 flex-col"
+          className="lg:hidden fixed top-20 left-0 w-full bg-black px-4 flex-col"
         >
           <motion.ul
             variants={containerVariants}
