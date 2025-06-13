@@ -6,8 +6,8 @@ const Header = () => {
   const [showMenu, setShowMenu] = useState(false);
 
   return (
-    <header className="sticky top-0 w-screen z-50 h-20 px-4 bg-transparent">
-      <nav className="lg:max-w-6xl mx-auto flex justify-between h-full items-center">
+    <header className="sticky top-0 w-screen z-50 h-20 px-4 lg:px-8 bg-transparent">
+      <nav className=" flex justify-between h-full items-center">
         <a className="text-white opacity-50" href="/">
           mrvicthor
         </a>

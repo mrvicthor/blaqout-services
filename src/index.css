@@ -1,7 +1,18 @@
 @import "tailwindcss";
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap");
 
 @layer base {
   body {
     background-color: black;
+    font-family: "Roboto", sans-serif;
+  }
+}
+
+@layer components {
+  .banner-header {
+    width: 15ch;
+  }
+  .banner-description {
+    width: 60ch;
   }
 }
