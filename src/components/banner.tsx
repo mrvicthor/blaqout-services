@@ -2,6 +2,7 @@ import { Link } from "react-scroll";
 import { BsMouse } from "react-icons/bs";
 import { motion } from "motion/react";
 import { container, item } from "../utils";
+import { gsap } from "gsap";
 
 const Banner = () => {
   return (
@@ -14,8 +15,10 @@ const Banner = () => {
         className="flex flex-col gap-6 items-center justify-center h-full overflow-hidden"
       >
         <motion.h1
+          onMouseEnter={() => gsap.to("#cursor", { scale: 8, duration: 0.3 })}
+          onMouseLeave={() => gsap.to("#cursor", { scale: 1, duration: 0.3 })}
           variants={item}
-          className="text-white text-4xl md:text-6xl lg:text-8xl font-medium text-center banner-header"
+          className="text-white text-4xl md:text-6xl lg:text-8xl font-medium text-center banner-header z-20"
         >
           Branding that you need indeed
         </motion.h1>
