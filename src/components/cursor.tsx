@@ -20,7 +20,7 @@ const Cursor = () => {
   return (
     <div
       id="cursor"
-      className="h-5 w-5 bg-white/50 rounded-full z-5 pointer-events-none"
+      className="hidden md:block fixed top-0 left-0  h-5 w-5 bg-white rounded-full z-5 pointer-events-none mix-blend-difference"
     />
   );
 };

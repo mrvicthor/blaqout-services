@@ -18,12 +18,14 @@ const Banner = () => {
           onMouseEnter={() => gsap.to("#cursor", { scale: 8, duration: 0.3 })}
           onMouseLeave={() => gsap.to("#cursor", { scale: 1, duration: 0.3 })}
           variants={item}
-          className="text-white text-4xl md:text-6xl lg:text-8xl font-medium text-center banner-header z-20"
+          className="text-white text-4xl md:text-6xl lg:text-8xl font-medium text-center banner-header"
         >
           Branding that you need indeed
         </motion.h1>
         <motion.p
           variants={item}
+          onMouseEnter={() => gsap.to("#cursor", { scale: 8, duration: 0.3 })}
+          onMouseLeave={() => gsap.to("#cursor", { scale: 1, duration: 0.3 })}
           className="text-white/50 text-center w-[40ch] md:w-[60ch]"
         >
           Elevate your brand with custom identity and package design. Showcase
