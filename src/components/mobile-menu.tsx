@@ -13,7 +13,7 @@ const MobileMenu = ({ handleMenu, showMenu }: MobileMenuProps) => {
       {showMenu ? (
         <motion.section
           initial={{ height: 0 }}
-          animate={{ height: "30vh" }}
+          animate={{ height: "35vh" }}
           exit={{
             height: 0,
             transition: { delay: 0.7, duration: 0.3 },
