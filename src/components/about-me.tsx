@@ -34,7 +34,7 @@ const About = () => {
   return (
     <section className="py-16 mt-8 border-t border-r border-l border-white/10 rounded-t-[3rem]">
       <div className="max-w-7xl mx-auto">
-        <section className="grid grid-cols-2 gap-6">
+        <section className="grid lg:grid-cols-2 gap-6 px-4 md:px-16 lg:px-0">
           <div className="space-y-6 pt-6">
             <h2 className="text-white text-6xl">Meet Victor</h2>
             <p className="text-white/50">
@@ -43,7 +43,7 @@ const About = () => {
               packaging that captivate and inspire, blending creativity with
               strategy
             </p>
-            <ul className="flex gap-2 flex-wrap border-t border-b border-white/10 py-6">
+            <ul className="flex gap-3 lg:gap-2 flex-wrap border-t border-b border-white/10 py-6">
               {services.map((service) => (
                 <li
                   key={service.id}
@@ -57,10 +57,10 @@ const About = () => {
               {experiences.map((item) => (
                 <li
                   key={item.id}
-                  className="text-white/50 flex justify-between"
+                  className="text-white/50 flex flex-col gap-3 md:flex-row md:justify-between"
                 >
                   <span className="capitalize">{item.title}</span>
-                  <span>{item.company}</span>
+                  <span className="md:mr-auto md:ml-20">{item.company}</span>
                   <span>{item.period}</span>
                 </li>
               ))}
