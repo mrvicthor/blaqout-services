@@ -10,6 +10,7 @@ import aboutMeImage from "../assets/portLogo.jpg";
 import movieApp from "../assets/web-ent.png";
 import iptrackerImage from "../assets/iptrac_proj.png";
 import formImage from "../assets/multi-step-form.png";
+import { Link } from "react-scroll";
 
 const Gallery = () => {
   const firstColumn = [
@@ -34,7 +35,7 @@ const Gallery = () => {
       initial={{ y: -900, scale: 1.1, opacity: 0 }}
       animate={{ y: 0, scale: 1, opacity: 1 }}
       transition={{ duration: 0.8, ease: "easeOut" }}
-      className="px-4"
+      className="px-4 py-12"
     >
       <div className="max-w-7xl mx-auto grid md:grid-cols-2 lg:grid-cols-7 gap-3">
         <div className="lg:col-span-2 grid grid-rows-[repeat(3,20rem)] gap-3 lg:py-16">
@@ -119,6 +120,22 @@ const Gallery = () => {
             </div>
           ))}
         </div>
+      </div>
+      <div className="mt-16 flex justify-center gap-6">
+        <button className="py-3 px-4 rounded-md overflow-hidden cursor-pointer">
+          <Link
+            to="projects"
+            smooth={true}
+            duration={500}
+            className="underline text-white capitalize"
+          >
+            all projects
+          </Link>
+        </button>
+
+        <button className="text-white border border-white/50 py-3 px-4 rounded-md overflow-hidden cursor-pointer">
+          Book a Free Call
+        </button>
       </div>
     </motion.section>
   );
