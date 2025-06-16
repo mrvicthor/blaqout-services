@@ -1,4 +1,6 @@
 import myImage from "../assets/portLogo.jpg";
+import { FaArrowDown } from "react-icons/fa6";
+import Projects from "./projects";
 
 const About = () => {
   const services = [
@@ -32,9 +34,9 @@ const About = () => {
     },
   ];
   return (
-    <section className="py-16 mt-8 border-t border-r border-l border-white/10 rounded-t-[3rem]">
+    <section className="py-16 mt-8 border-t border-r border-l border-white/10 rounded-t-[3rem] px-4 md:px-16 lg:px-8">
       <div className="max-w-7xl mx-auto">
-        <section className="grid lg:grid-cols-2 gap-6 px-4 md:px-16 lg:px-0">
+        <section className="grid lg:grid-cols-2 gap-6">
           <div className="space-y-6 pt-6">
             <h2 className="text-white text-6xl">Meet Victor</h2>
             <p className="text-white/50">
@@ -69,6 +71,13 @@ const About = () => {
           <div className="">
             <img src={myImage} alt="profile photo" className="rounded" />
           </div>
+        </section>
+        <section className="mt-6">
+          <p className="text-white/50 flex gap-4 items-center">
+            <span className="capitalize text-2xl">recent works</span>{" "}
+            <FaArrowDown className="animate-bounce" />
+          </p>
+          <Projects />
         </section>
       </div>
     </section>
