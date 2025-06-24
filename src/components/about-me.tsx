@@ -1,38 +1,9 @@
 import myImage from "../assets/portLogo.jpg";
 import { FaArrowDown } from "react-icons/fa6";
 import Projects from "./projects";
+import { experiences, services } from "../utils";
 
 const About = () => {
-  const services = [
-    { id: 1, name: "Frontend Development" },
-    { id: 2, name: "UI Implementation" },
-    { id: 3, name: "Component Libraries & Design Systems" },
-    { id: 4, name: "Performance Optimization" },
-    { id: 5, name: "Third-party Integrations" },
-    { id: 6, name: "Dashboard & Web App Interfaces" },
-    { id: 7, name: "Testing & Maintenance" },
-  ];
-
-  const experiences = [
-    {
-      id: 1,
-      title: "frontend developer",
-      company: "Vertu Motors",
-      period: "2023-24",
-    },
-    {
-      id: 2,
-      title: "frontend developer",
-      company: "Christ Liberty Church",
-      period: "2022-23",
-    },
-    {
-      id: 3,
-      title: "software developer",
-      company: "Just Computers Ltd",
-      period: "2021-22",
-    },
-  ];
   return (
     <section className="py-16 mt-8 border-t border-white/10 rounded-t-[3rem] px-4 md:px-16 lg:px-8">
       <div className="max-w-7xl mx-auto">

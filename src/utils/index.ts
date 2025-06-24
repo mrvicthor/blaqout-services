@@ -68,3 +68,34 @@ export const item = {
     opacity: 1,
   },
 };
+
+export const services = [
+  { id: 1, name: "Frontend Development" },
+  { id: 2, name: "UI Implementation" },
+  { id: 3, name: "Component Libraries & Design Systems" },
+  { id: 4, name: "Performance Optimization" },
+  { id: 5, name: "Third-party Integrations" },
+  { id: 6, name: "Dashboard & Web App Interfaces" },
+  { id: 7, name: "Testing & Maintenance" },
+];
+
+export const experiences = [
+  {
+    id: 1,
+    title: "frontend developer",
+    company: "Vertu Motors",
+    period: "2023-24",
+  },
+  {
+    id: 2,
+    title: "frontend developer",
+    company: "Christ Liberty Church",
+    period: "2022-23",
+  },
+  {
+    id: 3,
+    title: "software developer",
+    company: "Just Computers Ltd",
+    period: "2021-22",
+  },
+];

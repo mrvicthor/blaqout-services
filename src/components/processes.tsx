@@ -39,7 +39,7 @@ const Processes = () => {
           </div>
           <Process
             title="define your vision"
-            content="find the perfect plan tailored to your needs, offering the right
+            content="Find the perfect plan tailored to your needs, offering the right
                 balance of features, flexibility, and value to help you achieve
                 your goals effortlessly."
             step={1}
