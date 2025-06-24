@@ -6,6 +6,7 @@ import Banner from "./components/banner";
 import Cursor from "./components/cursor";
 import Gallery from "./components/gallery";
 import Header from "./components/header";
+import Processes from "./components/processes";
 
 function App() {
   return (
@@ -15,6 +16,7 @@ function App() {
       <Banner />
       <Gallery />
       <About />
+      <Processes />
     </>
   );
 }

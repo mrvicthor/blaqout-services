@@ -35,7 +35,7 @@ const Gallery = () => {
       initial={{ y: -900, scale: 1.1, opacity: 0 }}
       animate={{ y: 0, scale: 1, opacity: 1 }}
       transition={{ duration: 0.8, ease: "easeOut" }}
-      className="px-4 py-12"
+      className="px-4 py-6 border"
     >
       <div className="max-w-7xl mx-auto grid md:grid-cols-2 lg:grid-cols-7 gap-3">
         <div className="lg:col-span-2 grid grid-rows-[repeat(3,20rem)] gap-3 lg:py-16">

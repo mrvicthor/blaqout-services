@@ -49,7 +49,7 @@ const About = () => {
               {services.map((service) => (
                 <li
                   key={service.id}
-                  className="text-white/50 py-2 px-2 bg-white/3 w-fit rounded-md"
+                  className="text-white/50 py-2 px-2 bg-[#0D0D0D] w-fit rounded-md"
                 >
                   {service.name}
                 </li>
