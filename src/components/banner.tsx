@@ -3,10 +3,24 @@ import { BsMouse } from "react-icons/bs";
 import { motion } from "motion/react";
 import { container, item } from "../utils";
 import { gsap } from "gsap";
+import { FaReact, FaAngular, FaNodeJs } from "react-icons/fa";
+import { SiTypescript } from "react-icons/si";
+import {
+  TbBrandNextjs,
+  TbBrandTailwind,
+  TbBrandJavascript,
+  TbBrandReactNative,
+  TbBrandRedux,
+  TbBrandFramerMotion,
+} from "react-icons/tb";
+import { AiOutlineConsoleSql } from "react-icons/ai";
+import Stack from "./stack";
+
+// const techStack = ['react', 'angular', 'typeScript', 'nextjs', 'tailwindCSS', 'javaScript', 'nodeJs', 'reactNative', 'SQL']
 
 const Banner = () => {
   return (
-    <section className="mx-auto max-w-screen-xl h-dvh px-4">
+    <section className="mx-auto max-w-screen-xl h-[calc(100vh-5rem)] px-4">
       <motion.div
         variants={container}
         whileInView="visible"
@@ -53,6 +67,80 @@ const Banner = () => {
           </div>{" "}
           <span className="text-white/50">to see projects</span>
         </motion.div>
+        <div className="overflow-hidden whitespace-nowrap relative max-w-4xl mt-8">
+          <div className="animate-scroll flex w-max">
+            <ul className="flex items-center gap-6 py-4">
+              <Stack title="react">
+                <FaReact />
+              </Stack>
+              <Stack title="angular">
+                <FaAngular />
+              </Stack>
+              <Stack title="typeScript">
+                <SiTypescript />
+              </Stack>
+              <Stack title="nextjs">
+                <TbBrandNextjs />
+              </Stack>
+              <Stack title="tailwindCSS">
+                <TbBrandTailwind />
+              </Stack>
+              <Stack title="JavaScript">
+                <TbBrandJavascript />
+              </Stack>
+              <Stack title="nodeJs">
+                <FaNodeJs />
+              </Stack>
+              <Stack title="reactNative">
+                <TbBrandReactNative />
+              </Stack>
+              <Stack title="SQL">
+                <AiOutlineConsoleSql />
+              </Stack>
+              <Stack title="redux">
+                <TbBrandRedux />
+              </Stack>
+              <Stack title="motion">
+                <TbBrandFramerMotion />
+              </Stack>
+            </ul>
+            <ul className="flex items-center gap-6 py-4 px-6">
+              <Stack title="react">
+                <FaReact />
+              </Stack>
+              <Stack title="angular">
+                <FaAngular />
+              </Stack>
+              <Stack title="typeScript">
+                <SiTypescript />
+              </Stack>
+              <Stack title="nextjs">
+                <TbBrandNextjs />
+              </Stack>
+              <Stack title="tailwindCSS">
+                <TbBrandTailwind />
+              </Stack>
+              <Stack title="JavaScript">
+                <TbBrandJavascript />
+              </Stack>
+              <Stack title="nodeJs">
+                <FaNodeJs />
+              </Stack>
+              <Stack title="reactNative">
+                <TbBrandReactNative />
+              </Stack>
+              <Stack title="SQL">
+                <AiOutlineConsoleSql />
+              </Stack>
+              <Stack title="redux">
+                <TbBrandRedux />
+              </Stack>
+              <Stack title="motion">
+                <TbBrandFramerMotion />
+              </Stack>
+            </ul>
+          </div>
+        </div>
       </motion.div>
     </section>
   );
