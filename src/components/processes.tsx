@@ -8,7 +8,7 @@ import Process from "./process-step";
 const Processes = () => {
   return (
     <section className="py-24 border-t  border-white/10 rounded-t-[3rem] px-4 md:px-16 lg:px-8">
-      <div className="grid grid-cols-1 grid-rows-[20rem_min-max(76rem)] md:grid-rows-[20rem_68rem] lg:grid-rows-none lg:grid-cols-2 max-w-7xl mx-auto gap-8">
+      <div className="grid grid-cols-1 grid-rows-[20rem_minmax(20rem,_76rem)] md:grid-rows-[20rem_68rem] lg:grid-rows-none lg:grid-cols-2 max-w-7xl mx-auto gap-8">
         <div className="h-full">
           <img
             src={processImage}
