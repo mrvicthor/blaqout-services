@@ -4,6 +4,7 @@ import "./App.css";
 import About from "./components/about-me";
 import Banner from "./components/banner";
 import Cursor from "./components/cursor";
+import Footer from "./components/footer";
 import Gallery from "./components/gallery";
 import Header from "./components/header";
 import Processes from "./components/processes";
@@ -19,6 +20,7 @@ function App() {
       <About />
       <Processes />
       <Services />
+      <Footer />
     </>
   );
 }

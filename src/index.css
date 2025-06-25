@@ -36,10 +36,6 @@
     animation: scroll 30s linear infinite;
   }
 
-  /* .animate-scroll:hover {
-    animation-play-state: paused;
-  } */
-
   .animate-reverse-scroll {
     animation: reverse-scroll 30s linear infinite;
   }
