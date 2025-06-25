@@ -67,7 +67,10 @@ const Banner = () => {
           </div>{" "}
           <span className="text-white/50">to see projects</span>
         </motion.div>
-        <div className="overflow-hidden whitespace-nowrap relative max-w-4xl mt-8">
+        <motion.div
+          variants={item}
+          className="overflow-hidden whitespace-nowrap relative max-w-4xl mt-8"
+        >
           <div className="animate-scroll flex w-max">
             <ul className="flex items-center gap-6 py-4">
               <Stack title="react">
@@ -140,7 +143,7 @@ const Banner = () => {
               </Stack>
             </ul>
           </div>
-        </div>
+        </motion.div>
       </motion.div>
     </section>
   );
