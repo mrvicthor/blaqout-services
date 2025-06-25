@@ -1,14 +1,53 @@
-import { FaCircleDot } from "react-icons/fa6";
+import { FaCircleDot, FaLink, FaListCheck } from "react-icons/fa6";
 import { VscSettingsGear } from "react-icons/vsc";
 import { BsPersonWorkspace } from "react-icons/bs";
 import { PiLegoBold } from "react-icons/pi";
 import { GrOptimize } from "react-icons/gr";
+import { MdDashboardCustomize } from "react-icons/md";
 import serviceImage from "../assets/service.jpg";
 import { services } from "../utils";
 import { Link } from "react-scroll";
 import Service from "./service";
+import Card from "./card";
 
 const Services = () => {
+  const offerings = [
+    {
+      id: 1,
+      title: "frontend development",
+      icon: <VscSettingsGear className="text-white" />,
+    },
+    {
+      id: 2,
+      title: "UI Implementaion",
+      icon: <BsPersonWorkspace className="text-white" />,
+    },
+    {
+      id: 3,
+      title: "Component Libraries & Design Systems",
+      icon: <PiLegoBold className="text-white" />,
+    },
+    {
+      id: 4,
+      title: "Performance Optimization",
+      icon: <GrOptimize className="text-white" />,
+    },
+    {
+      id: 5,
+      title: "Third-Party Integrations",
+      icon: <FaLink className="text-white" />,
+    },
+    {
+      id: 6,
+      title: "Dashboard & Web App Interfaces",
+      icon: <MdDashboardCustomize className="text-white" />,
+    },
+    {
+      id: 7,
+      title: "Testing & Maintenance",
+      icon: <FaListCheck className="text-white" />,
+    },
+  ];
   return (
     <section className="py-24 border-t  border-white/10 rounded-t-[3rem] px-4 md:px-16 lg:px-8">
       <div className="max-w-7xl mx-auto">
@@ -84,6 +123,42 @@ const Services = () => {
             >
               <GrOptimize className="text-white" size={20} />
             </Service>
+          </div>
+        </div>
+        <div className="overflow-hidden whitespace-nowrap relative mt-8 border flex items-center">
+          <div className="animate-scroll flex w-max">
+            <ul className="flex items-center gap-6 py-4">
+              {offerings.map((item) => (
+                <Card key={item.id} title={item.title}>
+                  {item.icon}
+                </Card>
+              ))}
+            </ul>
+            <ul className="flex items-center gap-6 py-4 px-6">
+              {offerings.map((item) => (
+                <Card key={item.id} title={item.title}>
+                  {item.icon}
+                </Card>
+              ))}
+            </ul>
+          </div>
+        </div>
+        <div className="overflow-hidden whitespace-nowrap relative mt-2 border flex items-center">
+          <div className="animate-reverse-scroll flex w-max">
+            <ul className="flex items-center gap-6 py-4">
+              {offerings.map((item) => (
+                <Card key={item.id} title={item.title}>
+                  {item.icon}
+                </Card>
+              ))}
+            </ul>
+            <ul className="flex items-center gap-6 py-4 px-6">
+              {offerings.map((item) => (
+                <Card key={item.id} title={item.title}>
+                  {item.icon}
+                </Card>
+              ))}
+            </ul>
           </div>
         </div>
       </div>
