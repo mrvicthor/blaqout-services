@@ -41,25 +41,17 @@ const MobileMenu = ({ handleMenu, showMenu }: MobileMenuProps) => {
               variants={itemVariants}
               onClick={() => handleMenu(!showMenu)}
             >
-              <Link to="projects" smooth={true} duration={500}>
+              <Link to="projects" smooth={true} offset={400} duration={500}>
                 projects
               </Link>
             </motion.li>
+
             <motion.li
               className="capitalize text-white cursor-pointer"
               variants={itemVariants}
               onClick={() => handleMenu(!showMenu)}
             >
-              <Link to="testimonials" smooth={true} duration={500}>
-                testimonials
-              </Link>
-            </motion.li>
-            <motion.li
-              className="capitalize text-white cursor-pointer"
-              variants={itemVariants}
-              onClick={() => handleMenu(!showMenu)}
-            >
-              <Link to="contact" smooth={true} duration={500}>
+              <Link to="contact" smooth={true} offset={300} duration={500}>
                 contact
               </Link>
             </motion.li>

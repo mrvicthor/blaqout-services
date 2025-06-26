@@ -28,17 +28,13 @@ const Header = () => {
             </Link>
           </li>
           <li className="capitalize text-white opacity-50 hover:opacity-100 cursor-pointer">
-            <Link to="projects" smooth={true} duration={500}>
+            <Link to="projects" smooth={true} offset={400} duration={500}>
               projects
             </Link>
           </li>
+
           <li className="capitalize text-white opacity-50 hover:opacity-100 cursor-pointer">
-            <Link to="testimonials" smooth={true} duration={500}>
-              testimonials
-            </Link>
-          </li>
-          <li className="capitalize text-white opacity-50 hover:opacity-100 cursor-pointer">
-            <Link to="contact" smooth={true} duration={500}>
+            <Link to="contact" smooth={true} offset={300} duration={500}>
               contact
             </Link>
           </li>

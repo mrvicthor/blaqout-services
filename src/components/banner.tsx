@@ -16,8 +16,6 @@ import {
 import { AiOutlineConsoleSql } from "react-icons/ai";
 import Stack from "./stack";
 
-// const techStack = ['react', 'angular', 'typeScript', 'nextjs', 'tailwindCSS', 'javaScript', 'nodeJs', 'reactNative', 'SQL']
-
 const Banner = () => {
   return (
     <section className="mx-auto max-w-screen-xl h-[calc(100vh-5rem)] px-4">
