@@ -18,7 +18,7 @@ const MobileMenu = ({ handleMenu, showMenu }: MobileMenuProps) => {
             height: 0,
             transition: { delay: 0.7, duration: 0.3 },
           }}
-          className="lg:hidden fixed top-20 left-0 w-full bg-black px-4 flex-col"
+          className="lg:hidden fixed top-20 left-0 w-full bg-black px-4 flex-col z-50"
         >
           <motion.ul
             variants={containerVariants}
@@ -30,18 +30,27 @@ const MobileMenu = ({ handleMenu, showMenu }: MobileMenuProps) => {
             <motion.li
               className="capitalize text-white cursor-pointer"
               variants={itemVariants}
-              onClick={() => handleMenu(!showMenu)}
             >
-              <Link to="services" smooth={true} duration={500}>
+              <Link
+                to="services"
+                smooth={true}
+                duration={500}
+                onClick={() => handleMenu(!showMenu)}
+              >
                 services
               </Link>
             </motion.li>
             <motion.li
               className="capitalize text-white cursor-pointer"
               variants={itemVariants}
-              onClick={() => handleMenu(!showMenu)}
             >
-              <Link to="projects" smooth={true} offset={400} duration={500}>
+              <Link
+                to="projects"
+                smooth={true}
+                offset={1300}
+                duration={500}
+                onClick={() => handleMenu(!showMenu)}
+              >
                 projects
               </Link>
             </motion.li>
@@ -49,9 +58,14 @@ const MobileMenu = ({ handleMenu, showMenu }: MobileMenuProps) => {
             <motion.li
               className="capitalize text-white cursor-pointer"
               variants={itemVariants}
-              onClick={() => handleMenu(!showMenu)}
             >
-              <Link to="contact" smooth={true} offset={300} duration={500}>
+              <Link
+                to="contact"
+                smooth={true}
+                offset={300}
+                duration={500}
+                onClick={() => handleMenu(!showMenu)}
+              >
                 contact
               </Link>
             </motion.li>

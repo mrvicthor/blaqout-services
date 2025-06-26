@@ -14,7 +14,7 @@ const Footer = () => {
   const footerY = useTransform(scrollYProgress, [0, 1], [100, 0]);
   const footerOpacity = useTransform(scrollYProgress, [0, 1], [0, 1]);
   return (
-    <Element name="contact" className="element">
+    <Element name="contact">
       <footer ref={containerRef} className="py-24 relative min-h-[130vh]">
         <section className="sticky bottom-0 h-screen flex items-end justify-center">
           <motion.div

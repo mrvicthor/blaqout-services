@@ -50,7 +50,7 @@ const Services = () => {
   ];
 
   return (
-    <Element name="services" className="element">
+    <Element name="services">
       <section className="py-24 border-t border-white/10 rounded-t-[3rem] px-4 md:px-16 lg:px-8">
         <div className="max-w-7xl mx-auto">
           <div className="grid lg:grid-cols-2 gap-8">
