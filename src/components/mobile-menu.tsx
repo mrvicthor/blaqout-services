@@ -62,7 +62,7 @@ const MobileMenu = ({ handleMenu, showMenu }: MobileMenuProps) => {
               <Link
                 to="contact"
                 smooth={true}
-                offset={300}
+                offset={500}
                 duration={500}
                 onClick={() => handleMenu(!showMenu)}
               >
