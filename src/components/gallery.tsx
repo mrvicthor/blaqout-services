@@ -2,7 +2,6 @@ import { motion } from "motion/react";
 import financeImage from "../assets/finance.png";
 import taskManagerImage from "../assets/task-manager-preview.png";
 import bookingImage from "../assets/bookings.png";
-// import kratosImage from "../assets/kratos.jpg";
 import { FiArrowUpRight } from "react-icons/fi";
 import photoSnapImage from "../assets/photosnap.png";
 import audioPhileImage from "../assets/audiophile.png";
@@ -22,12 +21,27 @@ const Gallery = () => {
   const secondColumn = [
     { id: 1, preview: aboutMeImage, name: "blaqout" },
     { id: 2, preview: photoSnapImage, name: "photosnap studio" },
-    { id: 3, preview: audioPhileImage, name: "e-commerce app" },
+    {
+      id: 3,
+      preview: audioPhileImage,
+      name: "e-commerce app",
+      url: "https://audiophile-ecommerce-nu.vercel.app/",
+    },
   ];
 
   const thirdColumn = [
-    { id: 1, preview: formImage, name: "multi-step form" },
-    { id: 2, preview: movieApp, name: "movies app" },
+    {
+      id: 1,
+      preview: formImage,
+      name: "multi-step form",
+      url: "https://multi-step-form-one-psi.vercel.app/",
+    },
+    {
+      id: 2,
+      preview: movieApp,
+      name: "movies app",
+      url: "https://entertainment-web-app-vert.vercel.app/",
+    },
     { id: 3, preview: iptrackerImage, name: "IP tracker" },
   ];
   return (
@@ -107,7 +121,7 @@ const Gallery = () => {
                 key={column.id}
                 src={column.preview}
                 alt={column.name}
-                className="h-full object-cover w-full rounded-md grayscale hover:grayscale-0 transition duration-500"
+                className="h-full w-auto rounded-md grayscale hover:grayscale-0 transition duration-500"
               />
               <div className="absolute bottom-4 w-full px-6">
                 <button className="w-full border border-white/30 rounded-2xl py-2 bg-white/10 backdrop-blur-md hover:bg-white/20 transition-all duration-300 shadow-lg hover:shadow-xl hover:scale-[1.02] active:scale-[0.98] flex items-center justify-center gap-2">

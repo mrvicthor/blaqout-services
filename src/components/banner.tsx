@@ -29,7 +29,7 @@ const Banner = () => {
         <motion.h1
           onMouseEnter={() => gsap.to("#cursor", { scale: 8, duration: 0.3 })}
           onMouseLeave={() => gsap.to("#cursor", { scale: 1, duration: 0.3 })}
-          variants={item}
+          w-12
           className="text-white text-4xl md:text-6xl lg:text-8xl font-medium text-center banner-header"
         >
           Branding that you need indeed
