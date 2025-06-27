@@ -44,9 +44,12 @@ const Banner = () => {
           your story through bold visuals and strategic design solutions
         </motion.p>
         <motion.div variants={item} className="flex justify-between gap-8">
-          <button className="text-white border border-white/50 py-3 px-4 rounded-md overflow-hidden cursor-pointer animate-pulse">
+          <a
+            href="mailto:victoreleanya89@gmail.com"
+            className="text-white border border-white/50 py-3 px-4 rounded-md overflow-hidden cursor-pointer animate-pulse"
+          >
             Get started now
-          </button>
+          </a>
           <button className="text-white border border-white/50 py-3 px-4 rounded-md overflow-hidden cursor-pointer">
             <Link to="projects" smooth={true} duration={500}>
               See projects
