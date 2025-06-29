@@ -26,13 +26,15 @@ const Processes = () => {
             process
           </p>
           <div className="flex gap-4 border-b border-white/10 pb-6">
+            <a
+              href="mailto:victoreleanya89@gmail.com"
+              className="text-white border border-white/50 py-3 px-4 rounded-md overflow-hidden cursor-pointer animate-pulse"
+            >
+              Get in touch
+            </a>
+
             <button className="text-white border border-white/50 py-3 px-4 rounded-md overflow-hidden cursor-pointer">
-              <Link to="projects" smooth={true} duration={500}>
-                Book a Free Call
-              </Link>
-            </button>
-            <button className="text-white border border-white/50 py-3 px-4 rounded-md overflow-hidden cursor-pointer">
-              <Link to="projects" smooth={true} duration={500}>
+              <Link to="projects" smooth={true} offset={400} duration={500}>
                 See projects
               </Link>
             </button>

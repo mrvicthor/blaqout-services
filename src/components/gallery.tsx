@@ -169,15 +169,19 @@ const Gallery = () => {
             to="projects"
             smooth={true}
             duration={500}
+            offset={400}
             className="underline text-white capitalize"
           >
             all projects
           </Link>
         </button>
 
-        <button className="text-white border border-white/50 py-3 px-4 rounded-md overflow-hidden cursor-pointer">
-          Book a Free Call
-        </button>
+        <a
+          href="mailto:victoreleanya89@gmail.com"
+          className="text-white border border-white/50 py-3 px-4 rounded-md overflow-hidden cursor-pointer animate-pulse"
+        >
+          Get in touch
+        </a>
       </div>
     </motion.section>
   );

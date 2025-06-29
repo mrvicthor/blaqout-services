@@ -51,7 +51,7 @@ const Banner = () => {
             Get started now
           </a>
           <button className="text-white border border-white/50 py-3 px-4 rounded-md overflow-hidden cursor-pointer">
-            <Link to="projects" smooth={true} duration={500}>
+            <Link to="projects" smooth={true} offset={400} duration={500}>
               See projects
             </Link>
           </button>
