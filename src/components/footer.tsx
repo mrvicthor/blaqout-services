@@ -1,5 +1,6 @@
 import { useScroll, useTransform, motion } from "motion/react";
 import { useRef } from "react";
+import { PopupButton } from "react-calendly";
 import { FaGithub } from "react-icons/fa";
 import { FaXTwitter } from "react-icons/fa6";
 import { SiFrontendmentor } from "react-icons/si";
@@ -36,12 +37,12 @@ const Footer = () => {
               Curious about what we can create together? Let's bring something
               extraordinary to life!
             </p>
-            <a
-              href="mailto:victoreleanya89@gmail.com"
-              className="text-white border border-white/50 py-3 px-4 rounded-md overflow-hidden cursor-pointer"
-            >
-              Leave a Message
-            </a>
+            <PopupButton
+              url="https://calendly.com/victoreleanya89/30min"
+              rootElement={document.body}
+              text="Book a Free call"
+              className="text-white border border-white/50 py-3 px-4 rounded-md overflow-hidden cursor-pointer animate-pulse"
+            />
             <div className="flex divide-x-2 divide-white/50 gap-4">
               <a
                 className="px-8 cursor-pointer"

@@ -4,6 +4,7 @@ import { FaCircleDot, FaListCheck } from "react-icons/fa6";
 import { FaRegLightbulb } from "react-icons/fa";
 import { FaRocket } from "react-icons/fa6";
 import Process from "./process-step";
+import { PopupButton } from "react-calendly";
 
 const Processes = () => {
   return (
@@ -26,12 +27,12 @@ const Processes = () => {
             process
           </p>
           <div className="flex gap-4 border-b border-white/10 pb-6">
-            <a
-              href="mailto:victoreleanya89@gmail.com"
+            <PopupButton
+              url="https://calendly.com/victoreleanya89/30min"
+              rootElement={document.body}
+              text="Book a Free call"
               className="text-white border border-white/50 py-3 px-4 rounded-md overflow-hidden cursor-pointer animate-pulse"
-            >
-              Get in touch
-            </a>
+            />
 
             <button className="text-white border border-white/50 py-3 px-4 rounded-md overflow-hidden cursor-pointer">
               <Link to="projects" smooth={true} offset={400} duration={500}>

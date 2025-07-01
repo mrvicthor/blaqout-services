@@ -1,4 +1,5 @@
 import { Link } from "react-scroll";
+import { PopupButton } from "react-calendly";
 import { BsMouse } from "react-icons/bs";
 import { motion } from "motion/react";
 import { container, item } from "../utils";
@@ -44,12 +45,13 @@ const Banner = () => {
           your story through bold visuals and strategic design solutions
         </motion.p>
         <motion.div variants={item} className="flex justify-between gap-8">
-          <a
-            href="mailto:victoreleanya89@gmail.com"
+          <PopupButton
+            url="https://calendly.com/victoreleanya89/30min"
+            rootElement={document.body}
+            text="Book a Free call"
             className="text-white border border-white/50 py-3 px-4 rounded-md overflow-hidden cursor-pointer animate-pulse"
-          >
-            Get started now
-          </a>
+          />
+
           <button className="text-white border border-white/50 py-3 px-4 rounded-md overflow-hidden cursor-pointer">
             <Link to="projects" smooth={true} offset={400} duration={500}>
               See projects

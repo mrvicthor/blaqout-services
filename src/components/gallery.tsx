@@ -10,6 +10,7 @@ import iptrackerImage from "../assets/iptrac_proj.png";
 import formImage from "../assets/multi-step-form.png";
 import calendarImage from "../assets/calendar.png";
 import { Link } from "react-scroll";
+import { PopupButton } from "react-calendly";
 
 const Gallery = () => {
   const firstColumn = [
@@ -176,12 +177,12 @@ const Gallery = () => {
           </Link>
         </button>
 
-        <a
-          href="mailto:victoreleanya89@gmail.com"
+        <PopupButton
+          url="https://calendly.com/victoreleanya89/30min"
+          rootElement={document.body}
+          text="Book a Free call"
           className="text-white border border-white/50 py-3 px-4 rounded-md overflow-hidden cursor-pointer animate-pulse"
-        >
-          Get in touch
-        </a>
+        />
       </div>
     </motion.section>
   );
