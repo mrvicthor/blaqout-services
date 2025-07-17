@@ -2,7 +2,7 @@ import { useScroll, useTransform, motion } from "motion/react";
 import { useRef } from "react";
 import { PopupButton } from "react-calendly";
 import { FaGithub } from "react-icons/fa";
-import { FaXTwitter } from "react-icons/fa6";
+import { FaLinkedin } from "react-icons/fa6";
 import { SiFrontendmentor } from "react-icons/si";
 import { Element } from "react-scroll";
 const Footer = () => {
@@ -60,10 +60,10 @@ const Footer = () => {
               </a>
               <a
                 className="px-4 cursor-pointer"
-                href="https://x.com/eva_skillz"
+                href="https://www.linkedin.com/in/victor-eleanya-87a06543/"
                 target="_blank"
               >
-                <FaXTwitter className="text-white" size={24} />
+                <FaLinkedin className="text-white" size={24} />
               </a>
             </div>
           </motion.div>
